@@ -1,0 +1,227 @@
+/* палітра кольорів */
+/* колір основного тексту #757575 */
+/* колір другорядного тексту #212121 */
+/* акцент #2196F3*/
+/* колір тексту logo #000000 */
+/* білий колір тексту та основного фону #FFFFFF */
+/* білий колір з прозорістю - посилання на пошту 
+та телефон у футері rgba(255, 255, 255, 0.6) */
+/* колір фону hero та footer #2F303A*/
+/* другорядний колір фону #F5F4FA */
+/* колір рамок елеметів портфоліо #EEEEEE */
+:root {
+  --primery-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --accent-button: #042d4e;
+  --logo-text-color: #000000;
+  --white-text-bg: #ffffff;
+  --trwhite-text-footer: rgba(255, 255, 255, 0.6);
+  --bg-color-hero-footer: #2f303a;
+  --bg-secondary-color: #f5f4fa;
+  --border-color-portfolio: #eeeeee;
+}
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primery-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--white-text-bg);
+}
+.list {
+  list-style: none;
+}
+.title {
+  color: var(--secondary-text-color);
+}
+.link {
+  text-decoration: none;
+}
+/* заголовки які не будуть відображаться */
+.hidden-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* header */
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.header-logo.link {
+  color: var(--logo-text-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+.nav .link {
+  color: var(--secondary-text-color);
+}
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--accent-color);
+}
+.header .list-item {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact .link {
+  color: var(--primery-text-color);
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+.nav .current-page {
+  color: var(--accent-color);
+}
+/* section hero */
+.hero-title {
+  color: var(--white-text-bg);
+  background-color: var(--bg-color-hero-footer);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero .button {
+  color: var(--white-text-bg);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+}
+.hero .button:hover,
+.hero .button:focus,
+.hero .button:active {
+  background-color: var(--accent-button);
+}
+/* section features */
+.features-item.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-text {
+  line-height: 1.7;
+}
+.section.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  /* text-align: center; */
+}
+.team-item.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+}
+.team-item.text {
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+}
+/*sechion-portfolio*/
+/* filter-list */
+.filter-btn {
+  color: var(--secondary-text-color);
+  background-color: var(--bg-secondary-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: none;
+  border-radius: 4px;
+}
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn:active {
+  color: var(--white-text-bg);
+  background-color: var(--accent-color);
+}
+.filter-btn.all {
+  width: 73px;
+  height: 38px;
+}
+.filter-btn.web {
+  width: 125px;
+  height: 38px;
+}
+.filter-btn.addition {
+  width: 112px;
+  height: 38px;
+}
+.filter-btn.design {
+  width: 103px;
+  height: 38px;
+}
+.filter-btn.marketing {
+  width: 130px;
+  height: 38px;
+}
+.sechion-portfolio {
+  border-color: var(--border-color-portfolio);
+}
+.portfolio-item {
+  border-color: var(--border-color-portfolio);
+  width: 370px;
+  height: 404px;
+}
+.portfolio.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio.text {
+  font-size: 16px;
+  line-height: 1.9;
+}
+/* footer */
+.footer {
+  background-color: var(--bg-color-hero-footer);
+}
+.footer-logo {
+  color: var(--white-text-bg);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer-address .link {
+  line-height: 1.7;
+  font-style: normal;
+}
+.footer-address .address {
+  color: var(--white-text-bg);
+}
+.footer-address .contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address .link:hover,
+.footer-adress .link:focus {
+  color: var(--accent-color);
+}
