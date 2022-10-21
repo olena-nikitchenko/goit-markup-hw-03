@@ -4,46 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Студія</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
   <body class="body">
     <!-- header -->
     <header class="header">
-      <nav>
-        <a href="./index.html" class="header-logo link" lang="en">
-          <span class="logo-accent">Web</span>Studio</a
-        >
-        <ul class="nav-list list">
-          <li class="nav list-item"><a href="./index.html" class="current-page link">Студія</a></li>
-          <li class="nav list-item">
-            <a href="./portfolio.html" class="link">Портфоліо</a>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="header-logo link" lang="en">
+            <span class="logo-accent">Web</span>Studio</a
+          >
+          <ul class="nav-list list">
+            <li class="nav list-item">
+              <a href="./index.html" class="current-page link">Студія</a>
+            </li>
+            <li class="nav list-item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="nav list-item"><a href="#" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-list list">
+          <li class="contact list-item" lang="en">
+            <a href="#" class="link">info@devstudio.com</a>
           </li>
-          <li class="nav list-item"><a href="#" class="link">Контакти</a></li>
+          <li class="contact list-item"><a href="#" class="link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contact-list list">
-        <li class="contact list-item" lang="en">
-          <a href="#" class="link">info@devstudio.com</a>
-        </li>
-        <li class="contact list-item"><a href="#" class="link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- section hero -->
-      <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+      <section class="hero container">
+        <h1 class="hero-title title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button">Замовити послугу</button>
       </section>
       <!-- section features -->
-      <section class="section-features">
+      <section class="section-features container">
         <h2 class="hidden-title">Особливості</h2>
         <ul class="features-list list">
           <li class="features-item">
@@ -73,7 +81,7 @@
         </ul>
       </section>
       <!-- section work -->
-      <section class="section-work">
+      <section class="section-work container">
         <h2 class="section title">Чим ми займаємося</h2>
         <ul class="work-list list">
           <li class="work-item">
@@ -92,22 +100,38 @@
         <h2 class="section title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-item">
-            <img src="./images/photo-product-designer.jpg" alt="Ігор Дем'яненко" width="270" />
+            <img
+              class="card"
+              src="./images/photo-product-designer.jpg"
+              alt="Ігор Дем'яненко"
+              width="270"
+            />
             <h3 class="team-item title">Ігор Дем'яненко</h3>
             <p lang="en" class="team-item text">Product Designer</p>
           </li>
+
           <li class="team-item">
-            <img src="./images/photo-frontend-developer.jpg" alt="Ольга Рєпіна" width="270" />
+            <img
+              class="card"
+              src="./images/photo-frontend-developer.jpg"
+              alt="Ольга Рєпіна"
+              width="270"
+            />
             <h3 class="team-item title">Ольга Рєпіна</h3>
             <p lang="en" class="team-item text">Frontend Developer</p>
           </li>
           <li class="team-item">
-            <img src="./images/photo-marketing.jpg" alt="Микола Тарасов" width="270" />
+            <img class="card" src="./images/photo-marketing.jpg" alt="Микола Тарасов" width="270" />
             <h3 class="team-item title">Микола Тарасов</h3>
             <p lang="en" class="team-item text">Marketing</p>
           </li>
           <li class="team-item">
-            <img src="./images/photo-uidesigner.jpg" alt="Михайло Єрмаков" width="270" />
+            <img
+              class="card"
+              src="./images/photo-uidesigner.jpg"
+              alt="Михайло Єрмаков"
+              width="270"
+            />
             <h3 class="team-item title">Михайло Єрмаков</h3>
             <p lang="en" class="team-item text">UI Designer</p>
           </li>

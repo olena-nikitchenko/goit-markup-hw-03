@@ -29,10 +29,14 @@
   background-color: var(--white-text-bg);
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .title {
   color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .link {
   text-decoration: none;
@@ -50,7 +54,15 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /* header */
+.header {
+}
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -86,31 +98,42 @@
   color: var(--accent-color);
 }
 /* section hero */
-.hero-title {
-  color: var(--white-text-bg);
+.hero {
+  padding-top: 195px;
+  padding-bottom: 200px;
+  text-align: center;
+  margin-bottom: 94px;
   background-color: var(--bg-color-hero-footer);
+}
+.hero-title {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  color: var(--white-text-bg);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero .button {
-  color: var(--white-text-bg);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  align-items: center;
-  text-align: center;
+  display: inline-block;
+  min-width: 216px;
+  padding: 10px 32px;
+
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 216px;
-  height: 50px;
+
+  color: var(--white-text-bg);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
 }
 .hero .button:hover,
 .hero .button:focus,
@@ -118,35 +141,76 @@
   background-color: var(--accent-button);
 }
 /* section features */
+.section-features {
+  margin-bottom: 94px;
+}
 .features-item.title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .features-text {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.7;
 }
+/*-----section work----- */
+.section-work {
+  margin-bottom: 94px;
+}
+
 .section.title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  /* text-align: center; */
+  text-align: center;
+}
+/*-----section work----- */
+
+/*-----section team----- */
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--bg-secondary-color);
+}
+.team-item {
+  text-align: center;
+}
+.card {
+  margin-bottom: 30px;
 }
 .team-item.title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
 }
 .team-item.text {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   /* text-align: center; */
 }
 /*sechion-portfolio*/
+.sechion-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  border-color: var(--border-color-portfolio);
+}
+
 /* filter-list */
+.filter-list {
+  margin-bottom: 34px;
+}
 .filter-btn {
+  display: inline-block;
+  min-width: 73px;
+  padding: 6px 22px;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   background-color: var(--bg-secondary-color);
   font-family: inherit;
@@ -163,42 +227,48 @@
   background-color: var(--accent-color);
 }
 .filter-btn.all {
-  width: 73px;
-  height: 38px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .filter-btn.web {
-  width: 125px;
-  height: 38px;
 }
 .filter-btn.addition {
-  width: 112px;
-  height: 38px;
 }
 .filter-btn.design {
-  width: 103px;
-  height: 38px;
 }
 .filter-btn.marketing {
-  width: 130px;
-  height: 38px;
 }
-.sechion-portfolio {
-  border-color: var(--border-color-portfolio);
+.portfolio-card {
+  margin-bottom: 20px;
 }
 .portfolio-item {
   border-color: var(--border-color-portfolio);
   width: 370px;
-  height: 404px;
 }
 .portfolio.title {
+  margin-bottom: 4px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio.text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   line-height: 1.9;
+}
+.portfolio-link {
+  text-decoration: none;
+  color: inherit;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  background-color: rgb(156, 9, 9);
 }
 /* footer */
 .footer {
