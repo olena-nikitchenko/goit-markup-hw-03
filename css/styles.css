@@ -33,11 +33,7 @@
   margin: 0;
   list-style: none;
 }
-.title {
-  color: var(--secondary-text-color);
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 .link {
   text-decoration: none;
 }
@@ -59,6 +55,17 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title {
+  color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 /* header */
 .header {
@@ -102,7 +109,7 @@
   padding-top: 195px;
   padding-bottom: 200px;
   text-align: center;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   background-color: var(--bg-color-hero-footer);
 }
 .hero-title {
@@ -142,7 +149,7 @@
 }
 /* section features */
 .section-features {
-  margin-bottom: 94px;
+  outline: 2px solid royalblue;
 }
 .features-item.title {
   margin-bottom: 10px;
@@ -158,9 +165,9 @@
 }
 /*-----section work----- */
 .section-work {
-  margin-bottom: 94px;
+  padding-top: 0;
+  outline: 2px solid tomato;
 }
-
 .section.title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -197,8 +204,6 @@
 }
 /*sechion-portfolio*/
 .sechion-portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
   border-color: var(--border-color-portfolio);
 }
 
