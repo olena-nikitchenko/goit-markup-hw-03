@@ -82,8 +82,8 @@
   line-height: 1.19;
 }
 .header-logo.link {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 
   color: var(--logo-text-color);
 }
@@ -102,8 +102,8 @@
 }
 .nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 31px;
+  margin-top: 32px;
+  margin-bottom: 31px;
 
   color: var(--secondary-text-color);
 }
@@ -125,8 +125,8 @@
   margin-left: 50px;
 }
 .contact .link {
-  padding-top: 32px;
-  padding-bottom: 31px;
+  margin-top: 32px;
+  margin-bottom: 31px;
   color: var(--primery-text-color);
 }
 .contact .link:hover,
@@ -250,12 +250,12 @@
 }
 .team-item {
   margin-right: 30px;
-  text-align: center;
 }
 .team-item:last-child {
   margin-right: 0;
 }
 .team-card {
+  padding-top: 30px;
   padding-bottom: 30px;
   background: var(--white-text-bg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -264,7 +264,6 @@
 }
 .team-card-item {
   display: block;
-  margin-bottom: 30px;
 }
 .team-item.title {
   margin-right: 0;
@@ -288,8 +287,8 @@
 
 /*------- filter-list------ */
 .filter-list {
-  margin-bottom: 34px;
-  margin-left: 297px;
+  margin-bottom: 50px;
+  justify-content: center;
   display: flex;
 }
 .filter-item {
@@ -302,7 +301,6 @@
   display: inline-block;
   min-width: 73px;
   padding: 6px 22px;
-  margin-bottom: 16px;
   color: var(--secondary-text-color);
   background-color: var(--bg-secondary-color);
   font-family: inherit;
@@ -326,19 +324,14 @@
 
 .portfolio-card {
   display: block;
-  margin-bottom: 20px;
 }
 .flex-container {
   display: flex;
   flex-wrap: wrap;
 }
 .flex-element {
-  display: flex;
   width: 370px;
-  padding-bottom: 19px;
-  border-left: 1px solid var(--border-color-portfolio);
-  border-right: 1px solid var(--border-color-portfolio);
-  border-bottom: 1px solid var(--border-color-portfolio);
+  padding: 20px 24px;
 }
 .portfolio-item {
   width: 370px;
@@ -354,9 +347,9 @@
 
 .portfolio.title {
   margin-bottom: 4px;
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
-  width: 322px;
+  width: 322px; */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -365,9 +358,9 @@
 .portfolio.text {
   margin-top: 0;
   margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 322px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: 322px; */
   font-size: 16px;
   line-height: 1.9;
 }
